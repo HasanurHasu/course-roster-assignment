@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title": "Introduction to C Programming",
-      "img": "https://example.com/gaming_console.jpg",
+      "img": "https://img.imgdd.com/f210f3.f3ac56b5-6c31-4f7c-87c2-a23633ad87c3.png",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 1500,
       "hours": 1
@@ -10,7 +10,7 @@
     {
       "id": 2,
       "title": "Introduction to Algorithms",
-      "img": "https://example.com/smartphone.jpg",
+      "img": "https://img.imgdd.com/f210f3.88c48ef9-2b7c-4848-b927-c5efd7222c25.png",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 25000,
       "hours": 2
@@ -18,7 +18,7 @@
     {
       "id": 3,
       "title": "Introduction to C++ for DSA",
-      "img": "https://example.com/laptop.jpg",
+      "img": "https://img.imgdd.com/f210f3.a199c036-1ecd-4067-b272-8030c2ea3ba9.png",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 10000,
       "hours": 10
@@ -26,7 +26,7 @@
     {
       "id": 4,
       "title": "Basic Data Structures",
-      "img": "https://example.com/headphones.jpg",
+      "img": "https://img.imgdd.com/f210f3.faf6c5e7-83fb-41f6-bc25-37f16a01dea6.png",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 35000,
       "hours": 5
@@ -34,7 +34,7 @@
     {
       "id": 5,
       "title": "Introduction to OOP Python",
-      "img": "https://example.com/fitness_tracker.jpg",
+      "img": "https://img.imgdd.com/f210f3.a7bfb106-0f17-4e30-9926-cab4d95ae3ac.png",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 19000,
       "hours": 5
@@ -42,7 +42,7 @@
     {
       "id": 6,
       "title": "Software Engineering",
-      "img": "https://example.com/coffee_maker.jpg",
+      "img": "https://img.imgdd.com/f210f3.f51c8e84-fb6f-4074-bd2b-e034ea55fe3b.png",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 23000,
       "hours": 2
@@ -50,7 +50,7 @@
     {
       "id": 7,
       "title": "AWS, Cloud Computing",
-      "img": "https://example.com/smartwatch.jpg",
+      "img": "https://img.imgdd.com/f210f3.e72c59be-05b9-47fe-9bec-9da0e06107ba.png",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 35000,
       "hours": 5
@@ -58,7 +58,7 @@
     {
       "id": 8,
       "title": "Database (MySQL)",
-      "img": "https://example.com/bluetooth_speaker.jpg",
+      "img": "https://img.imgdd.com/f210f3.493c3a5d-565e-4bb9-9e5c-52f6dc476fae.png",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 9000,
       "hours": 5
@@ -66,7 +66,7 @@
     {
       "id": 9,
       "title": "Problem-Solving Part",
-      "img": "https://example.com/digital_camera.jpg",
+      "img": "https://img.imgdd.com/f210f3.27875d00-8a17-4650-af97-fa1d2db0f804.png",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 23000,
       "hours": 2
