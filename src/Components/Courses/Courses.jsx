@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Course from "../Course/Course";
 import SelectedCourse from "../SelectedCourse/SelectedCourse";
-import { ToastContainer, toast } from 'react-toastify';
+import { Flip, ToastContainer, Zoom, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Courses = () => {
@@ -10,7 +10,6 @@ const Courses = () => {
     const [creditRemaining, setCreditRemaining] = useState(20);
     const [totalCredit, setTotalCredit] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0)
-    const notify = () => toast("Wow so easy !");
 
     const handleSelectedCourse = (selectCourse, remainingCredit, creditTotal, price) => {
 
@@ -18,17 +17,22 @@ const Courses = () => {
         if (isExist) {
             return toast.error('Already Selected')
         } else {
-            const newSelectedCourse = [...selectedCourse, selectCourse];
-            setSelectedCourse(newSelectedCourse);
+            if (creditRemaining < 0 || totalCredit > 20) {
+                return toast.error('Total Credit up to 20')
+            } else {
+                const newSelectedCourse = [...selectedCourse, selectCourse];
+                setSelectedCourse(newSelectedCourse);
+
+                const newCreditRemaining = creditRemaining - remainingCredit;
+                setCreditRemaining(newCreditRemaining);
+
+                const newTotalCredit = totalCredit + creditTotal;
+                setTotalCredit(newTotalCredit);
+
+                const newTotalPrice = totalPrice + price;
+                setTotalPrice(newTotalPrice);
+            }
         }
-        const newCreditRemaining = creditRemaining - remainingCredit;
-        setCreditRemaining(newCreditRemaining);
-
-        const newTotalCredit = totalCredit + creditTotal;
-        setTotalCredit(newTotalCredit);
-
-        const newTotalPrice = totalPrice + price;
-        setTotalPrice(newTotalPrice);
     }
 
     useEffect(() => {
@@ -67,6 +71,7 @@ const Courses = () => {
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
+                transition={Flip}
                 theme="light"
             />
         </div>
