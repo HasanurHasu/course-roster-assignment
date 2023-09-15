@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-const Course = ({ course }) => {
+const Course = ({ course, handleSelectedCourse }) => {
     const { title, img, description, price, hours } = course;
     return (
         <>
@@ -19,7 +19,7 @@ const Course = ({ course }) => {
                         </div>
                     </div>
                     <div className="my-3">
-                        <button className="btn-primary bg-[#2F80ED] w-full py-2 rounded-xl">Buy Now</button>
+                        <button onClick={() => handleSelectedCourse(course, course.hours)} className="btn-primary text-white bg-[#2F80ED] w-full py-2 rounded-xl">Select</button>
                     </div>
                 </div>
             </div>
