@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-const Course = ({ course, handleSelectedCourse }) => {
+const Course = ({ course, handleSelectedCourse, totalPrice }) => {
     const { title, img, description, price, hours } = course;
     return (
         <>
@@ -19,7 +19,7 @@ const Course = ({ course, handleSelectedCourse }) => {
                         </div>
                     </div>
                     <div className="my-3">
-                        <button onClick={() => handleSelectedCourse(course, course.hours, course.hours)} className="btn-primary text-white bg-[#2F80ED] w-full py-2 rounded-xl">Select</button>
+                        <button onClick={() => handleSelectedCourse(course, course.hours, course.hours, course.price)} className="btn-primary text-white bg-[#2F80ED] w-full py-2 rounded-xl">Select</button>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,9 @@ const Course = ({ course, handleSelectedCourse }) => {
 };
 
 Course.propTypes = {
-    course: PropTypes.object.isRequired
+    course: PropTypes.object.isRequired,
+    handleSelectedCourse: PropTypes.func,
+    totalPrice: PropTypes.number
 }
 
 export default Course;

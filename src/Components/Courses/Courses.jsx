@@ -6,9 +6,10 @@ const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [selectedCourse, setSelectedCourse] = useState([]);
     const [creditRemaining, setCreditRemaining] = useState(20);
-    const [totalCredit, setTotalCredit] = useState(0)
+    const [totalCredit, setTotalCredit] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0)
 
-    const handleSelectedCourse = (selectCourse, remainingCredit, creditTotal) => {
+    const handleSelectedCourse = (selectCourse, remainingCredit, creditTotal, price) => {
         const newSelectedCourse =[...selectedCourse, selectCourse];
         setSelectedCourse(newSelectedCourse);
 
@@ -17,6 +18,9 @@ const Courses = () => {
 
         const newTotalCredit = totalCredit + creditTotal;
         setTotalCredit(newTotalCredit);
+
+        const newTotalPrice = totalPrice + price;
+        setTotalPrice(newTotalPrice);
     }
 
     useEffect(() => {
@@ -41,6 +45,7 @@ const Courses = () => {
                 selectedCourse={selectedCourse}
                 creditRemaining={creditRemaining}
                 totalCredit={totalCredit}
+                totalPrice={totalPrice}
                 ></SelectedCourse>
                 
             </div>
