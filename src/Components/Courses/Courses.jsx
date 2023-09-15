@@ -12,21 +12,23 @@ const Courses = () => {
     const [totalPrice, setTotalPrice] = useState(0)
 
     const handleSelectedCourse = (selectCourse, remainingCredit, creditTotal, price) => {
+        const newCreditRemaining = creditRemaining - remainingCredit;
+        const newTotalCredit = totalCredit + creditTotal;
 
         const isExist = selectedCourse.find(item => item.id == selectCourse.id);
         if (isExist) {
-            return toast.error('Already Selected')
+            return toast.error('You have already selected this course.')
         } else {
-            if (creditRemaining < 0 || totalCredit > 20) {
-                return toast.error('Total Credit up to 20')
+            if (newCreditRemaining < 0 || newTotalCredit > 20) {
+                return toast.error("You can't add credit up to 20 hours")
             } else {
                 const newSelectedCourse = [...selectedCourse, selectCourse];
                 setSelectedCourse(newSelectedCourse);
 
-                const newCreditRemaining = creditRemaining - remainingCredit;
+
                 setCreditRemaining(newCreditRemaining);
 
-                const newTotalCredit = totalCredit + creditTotal;
+
                 setTotalCredit(newTotalCredit);
 
                 const newTotalPrice = totalPrice + price;
