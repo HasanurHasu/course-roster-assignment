@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Course from "../Course/Course";
 import SelectedCourse from "../SelectedCourse/SelectedCourse";
-import { Flip, ToastContainer, Zoom, toast } from 'react-toastify';
+import { Flip, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Courses = () => {
