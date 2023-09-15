@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-const Course = ({ course, handleSelectedCourse, totalPrice }) => {
+const Course = ({ course, handleSelectedCourse }) => {
     const { title, img, description, price, hours } = course;
     return (
         <>
@@ -29,8 +29,6 @@ const Course = ({ course, handleSelectedCourse, totalPrice }) => {
 
 Course.propTypes = {
     course: PropTypes.object.isRequired,
-    handleSelectedCourse: PropTypes.func,
-    totalPrice: PropTypes.number
+    handleSelectedCourse: PropTypes.func
 }
-
 export default Course;
