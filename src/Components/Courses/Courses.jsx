@@ -5,14 +5,18 @@ import SelectedCourse from "../SelectedCourse/SelectedCourse";
 const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [selectedCourse, setSelectedCourse] = useState([]);
-    const [creditRemaining, setCreditRemaining] = useState(20)
+    const [creditRemaining, setCreditRemaining] = useState(20);
+    const [totalCredit, setTotalCredit] = useState(0)
 
-    const handleSelectedCourse = (selectCourse, time) => {
+    const handleSelectedCourse = (selectCourse, remainingCredit, creditTotal) => {
         const newSelectedCourse =[...selectedCourse, selectCourse];
         setSelectedCourse(newSelectedCourse);
 
-        const newCreditRemaining = (creditRemaining - time);
+        const newCreditRemaining = creditRemaining - remainingCredit;
         setCreditRemaining(newCreditRemaining);
+
+        const newTotalCredit = totalCredit + creditTotal;
+        setTotalCredit(newTotalCredit);
     }
 
     useEffect(() => {
@@ -36,6 +40,7 @@ const Courses = () => {
                 <SelectedCourse 
                 selectedCourse={selectedCourse}
                 creditRemaining={creditRemaining}
+                totalCredit={totalCredit}
                 ></SelectedCourse>
                 
             </div>

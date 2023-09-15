@@ -19,7 +19,7 @@ const Course = ({ course, handleSelectedCourse }) => {
                         </div>
                     </div>
                     <div className="my-3">
-                        <button onClick={() => handleSelectedCourse(course, course.hours)} className="btn-primary text-white bg-[#2F80ED] w-full py-2 rounded-xl">Select</button>
+                        <button onClick={() => handleSelectedCourse(course, course.hours, course.hours)} className="btn-primary text-white bg-[#2F80ED] w-full py-2 rounded-xl">Select</button>
                     </div>
                 </div>
             </div>
