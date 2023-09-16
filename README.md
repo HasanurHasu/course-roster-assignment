@@ -3,7 +3,7 @@
 
  - User-Friendly Interface
  - Total 9 Courses
- - User-Friendly Interface
+ - Credit Remaining System
 
 ## How I managed the state in the assignment project.
 
