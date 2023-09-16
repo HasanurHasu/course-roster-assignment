@@ -20,7 +20,7 @@ const Courses = () => {
             return toast.error('You have already selected this course.')
         } else {
             if (newCreditRemaining < 0 || newTotalCredit > 20) {
-                return toast.error("You can't add credit up to 20 hours")
+                return toast.error("You can't add credit more then 20 hours")
             } else {
                 const newSelectedCourse = [...selectedCourse, selectCourse];
                 setSelectedCourse(newSelectedCourse);
